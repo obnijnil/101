@@ -16,3 +16,13 @@ sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefpane
 ```
 rm -rf jdkmajor.minor.macro[_update].jd
 ```
+
+* multiple JDKs
+
+```
+export JAVA_HOME_7=$(/usr/libexec/java_home -v1.7)
+export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
+alias java7='export JAVA_HOME=$JAVA_HOME_7'
+alias java8='export JAVA_HOME=$JAVA_HOME_8'
+export JAVA_HOME=$JAVA_HOME_7
+```
