@@ -37,4 +37,11 @@ alias java8='export JAVA_HOME=$JAVA_HOME_8'
 
 ## Profile
 
-There are [a bunch of color schemes](https://github.com/lysyi3m/osx-terminal-themes) available on GitHub for default Mac OS X Terminal.app. Loving `Github` and `AtomOneLight`.
+To modify bash prompt, add following lines into your profile:
+
+```sh
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ " # Change the bash prompt to be colorized, and rearranges the prompt to be “username@hostname:cwd $”.
+export CLICOLOR=1 # Enable command line colors.
+```
+
+And there are [a bunch of color schemes](https://github.com/lysyi3m/osx-terminal-themes) available on GitHub for default Mac OS X Terminal.app. Loving `Github` and `AtomOneLight`.
