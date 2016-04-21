@@ -38,3 +38,4 @@ alias java8='export JAVA_HOME=$JAVA_HOME_8'
 ## Profile
 
 There are [a bunch of color schemes](https://github.com/lysyi3m/osx-terminal-themes) available on GitHub for default Mac OS X Terminal.app.
+Loving the 
