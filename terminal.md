@@ -12,6 +12,15 @@ username ALL=(ALL) NOPASSWD: ALL # Replace username with your name.
 ```
 After this, you can `sudo whatever_you_want` without the password.
 
+## cron
+
+*-nix scheduler.
+
+```shell
+crontab -l # List all your cron jobs.
+crontab -e # Edit your cron jobs.
+```
+
 # Ruby
 
 ## Can't install gems?
