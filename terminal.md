@@ -24,13 +24,20 @@ crontab -e # Edit your cron jobs.
 How to create a cron job?
 
 ```shell
-* * * * * [shell script goes here] # The asterisks means every minute/hour/day of month/month and week day.
+* * * * * [shell script goes here]
+│ │ │ │ │
+│ │ │ │ └─── day of week (0 - 6) (0: Sunday, 6: Saturday)
+│ │ │ └──────── month (1 - 12)
+│ │ └───────────── day of month (1 - 31)
+│ └────────────────── hour (0 - 23)
+└─────────────────────── minute (0 - 59)
 ```
 
 e.g.
 
-```
-1 * * * * * osascript -e "display notification \"$(date)\" with title \"Title\" subtitle \"Subtitle\" sound name \"Purr\""
+```shell
+# Display a notification on the hour.
+* 0-23 * * * * osascript -e "display notification \"$(date)\" with title \"Title\" subtitle \"Subtitle\" sound name \"Purr\""
 ```
 
 # Ruby
