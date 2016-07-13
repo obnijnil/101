@@ -23,8 +23,8 @@ crontab -e # Edit your cron jobs.
 
 How to create a cron job?
 
-```
-*[minute] *[hour] *[day of month] *[month] *[week day] [shell script goes here]
+```shell
+* * * * * [shell script goes here] # The asterisks means every minute/hour/day of month/month and week day.
 ```
 
 e.g.
