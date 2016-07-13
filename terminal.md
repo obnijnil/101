@@ -21,6 +21,18 @@ crontab -l # List all your cron jobs.
 crontab -e # Edit your cron jobs.
 ```
 
+How to create a cron job?
+
+```
+*[minute] *[hour] *[day of month] *[month] *[week day] [shell script goes here]
+```
+
+e.g.
+
+```
+1 * * * * * osascript -e "display notification \"$(date)\" with title \"Title\" subtitle \"Subtitle\" sound name \"Purr\""
+```
+
 # Ruby
 
 ## Can't install gems?
